@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GestureRecognizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5CQ-lC-TSL">
+                                <rect key="frame" x="10" y="54" width="394" height="738"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ks-yP-Zi8">
+                                <rect key="frame" x="143" y="815" width="129" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Add Image"/>
+                                <connections>
+                                    <action selector="addImagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ryT-le-t0D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4ks-yP-Zi8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="AIQ-RQ-awX"/>
+                            <constraint firstItem="4ks-yP-Zi8" firstAttribute="top" secondItem="5CQ-lC-TSL" secondAttribute="bottom" constant="20" id="DTt-tY-QlH"/>
+                            <constraint firstItem="5CQ-lC-TSL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="E9l-ox-E23"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5CQ-lC-TSL" secondAttribute="trailing" constant="10" id="F8b-Ht-ITp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4ks-yP-Zi8" secondAttribute="bottom" constant="11" id="KwE-g4-7Fc"/>
+                            <constraint firstItem="4ks-yP-Zi8" firstAttribute="centerX" secondItem="5CQ-lC-TSL" secondAttribute="centerX" id="hTu-ba-M0d"/>
+                            <constraint firstItem="5CQ-lC-TSL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="uJY-gM-KUh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="5CQ-lC-TSL" id="BnL-tL-A9G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Xzf-eJ-yjx"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Kbw-RY-e8d"/>
+                <pinchGestureRecognizer id="4Cb-fq-QXF"/>
+                <pinchGestureRecognizer id="g1L-u2-xyb"/>
+                <rotationGestureRecognizer id="GAG-hN-4T3"/>
+                <rotationGestureRecognizer id="Mdh-Eb-B9h"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
